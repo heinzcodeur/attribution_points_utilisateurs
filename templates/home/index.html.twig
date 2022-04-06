@@ -39,18 +39,16 @@
                 <script>
                     function ajouterpoints(id) {
                         var quant = prompt('nombre de points à ajouter');
-                        //var operation = prompt('')
                         var url = '/gestionPoints/' + id +'/' + quant + '/' + 'ajout';
                         alert(url);
                         document.location = url;
                     }
 
-                    function retirerpoints() {
+                    function retirerpoints(id) {
                         var quant = prompt('nombre de points à retirer');
-                        //var operation = prompt('')
-                        var url = '/gestionPoints/' + id +'/' + quant + '/' + 'retrait';
-                        alert(url);
-                        document.location = url;
+                        var uri = '/gestionPoints/' + id +'/' + quant + '/' + 'retrait';
+                        alert(uri);
+                        document.location = uri;
                     }
                 </script>
                 <div>
